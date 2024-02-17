@@ -56,8 +56,7 @@ namespace GhostLyzer.Core.EventStoreDB.Repository
         /// <param name="cancellationToken">A cancellation token that can be used to cancel the operation.</param>
         /// <returns>A task that represents the asynchronous operation. The task result contains the found aggregate, or null if no aggregate was found with the provided ID.</returns
         public Task<T?> FindAsync(long id, CancellationToken cancellationToken) =>
-            _eventStore.AggregateStream<T>(
-                id, cancellationToken);
+            _eventStore.AggregateStream<T>(id, cancellationToken);
 
         /// <summary>
         /// Updates an existing aggregate in the EventStoreDB.

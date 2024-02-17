@@ -4,13 +4,44 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>GhostLyzer Core EventStoreDB</Title>
+    <Authors>Christian Schou</Authors>
+    <Company>GhostLyzer</Company>
+    <Description>A class lib with implementation for EventStoreDB and built in event bus for GhostLyzer.</Description>
+    <Copyright>GhostLyzer</Copyright>
+    <PackageProjectUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.EventStoreDB</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.EventStoreDB</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>GhostLyzer</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>github-readme-logo-ghostlyzer.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="EventStore.Client.Grpc.Streams" Version="23.1.0" />
     <PackageReference Include="GhostLyzer.Core.Domain" Version="1.0.0" />
+    <PackageReference Include="GhostLyzer.Core.Exceptions" Version="1.0.1" />
     <PackageReference Include="GhostLyzer.Core.Utils" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="github-readme-logo-ghostlyzer.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
